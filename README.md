@@ -1,8 +1,3 @@
----
-title: Mozc UT Alt-Cannadic Dictionary
-date: 2023-01-18
----
-
 ## Overview
 
 Mozc UT Alt-Cannadic Dictionary is a dictionary converted from [Alt-Cannadic](https://ja.osdn.net/projects/alt-cannadic/) for Mozc.
