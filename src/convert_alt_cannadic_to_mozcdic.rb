@@ -91,7 +91,9 @@ l2 = []
 lines = lines.sort
 
 # Mozc の一般名詞のID
-id_mozc = "1847"
+url = "https://raw.githubusercontent.com/google/mozc/master/src/data/dictionary_oss/id.def"
+id_mozc = URI.open(url).read.split(" 名詞,一般,")[0]
+id_mozc = id_mozc.split("\n")[-1]
 
 p = 0
 
