@@ -5,6 +5,7 @@
 # License: Apache License, Version 2.0
 
 require 'nkf'
+require 'open-uri'
 
 `wget -nc https://ja.osdn.net/dl/alt-cannadic/alt-cannadic-110208.tar.bz2`
 `rm -rf alt-cannadic-110208`
@@ -91,7 +92,9 @@ l2 = []
 lines = lines.sort
 
 # Mozc の一般名詞のID
-id_mozc = "1847"
+url = "https://raw.githubusercontent.com/google/mozc/master/src/data/dictionary_oss/id.def"
+id_mozc = URI.open(url).read.split(" 名詞,一般,")[0]
+id_mozc = id_mozc.split("\n")[-1]
 
 p = 0
 
