@@ -30,4 +30,13 @@ To modify the costs for words or merge multiple UT dictionaries into one, use th
 
 [merge-ut-dictionaries](https://github.com/utuhiro78/merge-ut-dictionaries)
 
+## Update this dictionary with the latest stuff
+
+Requirement(s): python
+
+```
+cd src/
+sh make.sh
+```
+
 [HOME](http://linuxplayers.g1.xrea.com/mozc-ut.html)
