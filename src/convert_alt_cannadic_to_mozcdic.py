@@ -4,23 +4,18 @@
 # Author: UTUMI Hirosi (utuhiro78 at yahoo dot co dot jp)
 # License: Apache License, Version 2.0
 
-import os
 import re
-import shutil
-import subprocess
+import tarfile
 import urllib.request
 from unicodedata import normalize
 
 urllib.request.urlretrieve('https://ftp.iij.ad.jp/pub/osdn.jp/alt-cannadic/50881/alt-cannadic-110208.tar.bz2', 'alt-cannadic-110208.tar.bz2')
 
-if os.path.exists('alt-cannadic-110208'):
-	shutil.rmtree('alt-cannadic-110208')
-
-subprocess.run(['tar', 'xf', 'alt-cannadic-110208.tar.bz2'], check=True)
-
-with open("alt-cannadic-110208/gcanna.ctd", "r", encoding="euc_jp") as f1, \
-open("alt-cannadic-110208/g_fname.ctd", "r", encoding="euc_jp") as f2:
-	lines = f1.read() + f2.read()
+with tarfile.open("alt-cannadic-110208.tar.bz2") as tar:
+	file = tar.extractfile("alt-cannadic-110208/gcanna.ctd")
+	lines = file.read().decode("euc_jp")
+	file = tar.extractfile("alt-cannadic-110208/g_fname.ctd")
+	lines = lines + file.read().decode("euc_jp")
 
 lines = lines.splitlines()
 
