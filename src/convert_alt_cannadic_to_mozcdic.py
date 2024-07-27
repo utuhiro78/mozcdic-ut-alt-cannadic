@@ -26,7 +26,7 @@ with urllib.request.urlopen(url) as response:
 
 id_mozc = id_mozc.split(" 名詞,一般,")[0].split("\n")[-1]
 
-dicname = "mozcdic-ut-alt-cannadic.txt"
+dict_name = "mozcdic-ut-alt-cannadic.txt"
 l2 = []
 
 for i in range(len(lines)):
@@ -82,8 +82,8 @@ for i in range(len(lines)):
 lines = sorted(l2)
 l2 = []
 
-with open(dicname, "w", encoding="utf-8") as dicfile:
-    dicfile.write("")
+with open(dict_name, "w", encoding="utf-8") as dict_file:
+    dict_file.write("")
 
 for i in range(len(lines)):
     entry1 = lines[i].split("\t")
@@ -100,5 +100,5 @@ for i in range(len(lines)):
 lines = sorted(l2)
 l2 = []
 
-with open(dicname, "a", encoding="utf-8") as dicfile:
-    dicfile.writelines(lines)
+with open(dict_name, "a", encoding="utf-8") as dict_file:
+    dict_file.writelines(lines)
