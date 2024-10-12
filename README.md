@@ -1,14 +1,12 @@
 ## Overview
 
-Mozc UT Alt-Cannadic Dictionary is a dictionary converted from [Alt-Cannadic](https://ja.osdn.net/projects/alt-cannadic/) for Mozc.
+A dictionary converted from [Alt-Cannadic](https://ja.osdn.net/projects/alt-cannadic/wiki/FrontPage) for Mozc.
 
 Thanks to the Alt-Cannadic team.
 
 ## License
 
 mozcdic-ut-alt-cannadic.txt: GPL-2.0
-
-Source code: Apache License, Version 2.0
 
 ```
 head -n 10 alt-cannadic-110208/COPYING
@@ -17,9 +15,11 @@ head -n 10 alt-cannadic-110208/COPYING
 		       Version 2, June 1991
 ```
 
+Source code: Apache License, Version 2.0
+
 ## Usage
 
-Add mozcdic-ut-*.txt to dictionary00.txt and build Mozc as usual.
+Add the dictionary to dictionary00.txt and build Mozc as usual.
 
 ```
 tar xf mozcdic-ut-*.txt.tar.bz2
