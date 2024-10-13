@@ -1,8 +1,8 @@
 ## Overview
 
-A dictionary converted from [Alt-Cannadic](https://ja.osdn.net/projects/alt-cannadic/wiki/FrontPage) for Mozc.
+A dictionary converted from [alt-cannadic](https://ja.osdn.net/projects/alt-cannadic/wiki/FrontPage) for Mozc.
 
-Thanks to the Alt-Cannadic team.
+Thanks to the alt-cannadic team.
 
 ## License
 
