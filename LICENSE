@@ -1,6 +1,4 @@
-mozcdic-ut-alt-cannadic.txt: GPL-2.0
-
-Source code: Apache License, Version 2.0
+GPL-2.0.
 
 ```
 head -n 10 alt-cannadic-110208/COPYING
