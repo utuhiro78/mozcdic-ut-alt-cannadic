@@ -6,7 +6,7 @@ Thanks to the alt-cannadic team.
 
 ## License
 
-GPL-2.0.
+GPL-2.0
 
 ```
 head -n 10 alt-cannadic-110208/COPYING
